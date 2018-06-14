@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="registration.css">
+
+  <title>Registration Numbers</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="head">Registration Numbers</h1>
+    <div class="row">
+      <div class="col-12">
+
+        <input type="text" name="textInput" placeholder="Enter Registration Number" class="col-3 textInput" value="">
+        <button type="button" name="button" class="col-2 AddReg">ADD</button>
+        <button type="button" name="button" class="col-2 clear">Clear</button>
+        <div class="dropdown">
+          <button class="dropbtn">Towns</button>
+             <div class="dropdown-content">
+
+            <a class="col-2 TownButton" value="CJ"> Paarl </a>
+
+            <a class="col-2 TownButton" value="CK"> Malmesbury </a>
+
+            <a class="col-2 TownButton" value="CL"> Stellenbosch</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="">
+        <div style="text-align:center" class="display"></div>
+      </div>
+    <div class="registration"></div>
+    </div>
+
+</body>
+<script src="registration.logic.js" charset="utf-8"></script>
+<script src="registration.js" charset="utf-8"></script>
+
+
+</html>
