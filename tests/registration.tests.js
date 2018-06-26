@@ -17,4 +17,11 @@ describe('Registration Numbers', function() {
         reg.TownReg('CL 6587')
         assert.deepEqual({'CL 4523':0, 'CL 6587':0}, reg.getRegNum());
 });
+it('should return registration number from all the towns', function() {
+  var reg = RegFactory()
+  reg.TownReg('CJ 4523')
+  reg.TownReg('CK 6587')
+  reg.TownReg('CL 4523')
+  assert.deepEqual({'CJ 4523':0, 'CK 6587':0, 'CL 4523':0}, reg.getRegNum());
+});
 });
